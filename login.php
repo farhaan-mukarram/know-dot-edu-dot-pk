@@ -83,9 +83,9 @@ function validate() {
 <body>
 	<!-- Nav bar :: PHP -->
 	<div class="top row col-12">
-	<a id = "logo" href = "index.php"><img src = "logo.png"></a>
+	<a id = "logo" href = "landing/index.php"><img src = "logo.png"></a>
 	<ul class = "navbar"> 
-		<a href = "index.php" > <li> Home </li> </a>
+		<a href = "landing/index.php" > <li> Home </li> </a>
 		<?php 
 			/* change navbar based on whether you are logged in or not */
 			if (isset($_SESSION['userName'])) {
@@ -94,8 +94,8 @@ function validate() {
 			} else {
 				echo '
 					<a href = "viewcourses.php"> <li> Courses </li> </a>
-					<a href = "about.html"> <li> About </li> </a>
-					<a href = "pricing.html"> <li> Pricing </li> </a>
+					<a href = "about us/index.html"> <li> About </li> </a>
+					<a href = "pricing/index.html"> <li> Pricing </li> </a>
 				';
 			}
 		?>
